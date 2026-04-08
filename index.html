@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Santro's Wedding – Deepthi &amp; Neelamadhab</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Great+Vibes&display=swap" rel="stylesheet">
+<style>
+:root {
+  --dp: #1e0845;
+  --pm: #4a1d96;
+  --ps: #7c3aed;
+  --gold: #c9a84c;
+  --gl: #e8d08a;
+  --gp: #f5eacc;
+  --cream: #fdf8f0;
+  --white: #ffffff;
+  --td: #1a0933;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--cream);font-family:'Cormorant Garamond',serif;color:var(--td);overflow-x:hidden}
+
+/* PETALS */
+.pc{position:fixed;top:0;left:0;width:100%;height:100%;pointer-events:none;z-index:1;overflow:hidden}
+.pt{position:absolute;top:-60px;border-radius:50% 0 50% 0;animation:fall linear infinite}
+@keyframes fall{0%{transform:translateY(0) rotate(0deg) translateX(0);opacity:.6}50%{transform:translateY(50vh) rotate(180deg) translateX(35px);opacity:.35}100%{transform:translateY(110vh) rotate(360deg) translateX(-15px);opacity:0}}
+
+/* HERO */
+.hero{min-height:100vh;background:linear-gradient(155deg,#0d0220 0%,#1e0845 30%,#3d1278 60%,#1a0535 100%);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:50px 20px 80px;position:relative;overflow:hidden}
+.hero-bg-glow{position:absolute;width:600px;height:600px;border-radius:50%;background:radial-gradient(circle,rgba(124,58,237,0.18) 0%,transparent 70%);top:50%;left:50%;transform:translate(-50%,-50%);pointer-events:none}
+
+/* Temple SVG */
+.t-arch{position:absolute;top:0;left:50%;transform:translateX(-50%);width:min(700px,100%);opacity:.2;pointer-events:none}
+
+/* Gold lines */
+.gl-row{display:flex;align-items:center;gap:10px;max-width:320px;margin:0 auto}
+.gl-row span{flex:1;height:1px;background:linear-gradient(90deg,transparent,var(--gl),transparent)}
+.gl-row i{width:7px;height:7px;border-radius:50%;background:var(--gold)}
+
+.jai{color:var(--gl);font-size:clamp(.75rem,2vw,.9rem);letter-spacing:.4em;text-transform:uppercase;margin:16px 0 4px;opacity:.85}
+.hfam{font-family:'Cinzel Decorative',serif;color:var(--gold);font-size:clamp(1.1rem,3.5vw,1.7rem);letter-spacing:.1em}
+.hsub{color:var(--gl);font-size:clamp(.72rem,2vw,.88rem);letter-spacing:.35em;text-transform:uppercase;margin:4px 0 20px;opacity:.8}
+.hinvite{color:rgba(255,255,255,.72);font-style:italic;font-size:clamp(.85rem,2.3vw,1rem);max-width:400px;line-height:1.75;margin-bottom:24px}
+.bname{font-family:'Great Vibes',cursive;color:#fff;font-size:clamp(3.8rem,13vw,7rem);line-height:1;text-shadow:0 0 50px rgba(201,168,76,.5)}
+.amp{font-family:'Great Vibes',cursive;color:var(--gold);font-size:clamp(2rem,7vw,4.2rem);display:block;margin:-6px 0}
+.gname{font-family:'Great Vibes',cursive;color:#fff;font-size:clamp(3.2rem,11vw,6rem);line-height:1;text-shadow:0 0 50px rgba(201,168,76,.5)}
+.dpill{background:linear-gradient(135deg,var(--gold),#9a6f20);color:#fff;font-family:'Cinzel Decorative',serif;font-size:clamp(.6rem,1.8vw,.78rem);letter-spacing:.14em;padding:10px 26px;border-radius:50px;margin-top:22px;display:inline-block;box-shadow:0 4px 20px rgba(201,168,76,.4)}
+.scroll-h{position:absolute;bottom:24px;display:flex;flex-direction:column;align-items:center;gap:5px;color:rgba(255,255,255,.45);font-size:.65rem;letter-spacing:.22em;text-transform:uppercase;animation:bob 2s infinite}
+.scroll-h svg{width:18px;fill:none;stroke:var(--gl);stroke-width:2}
+@keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(7px)}}
+
+/* HERO ANIMS */
+.ha{opacity:0;animation:hfu .9s forwards}
+.ha1{animation-delay:.15s}.ha2{animation-delay:.4s}.ha3{animation-delay:.7s}.ha4{animation-delay:1s}.ha5{animation-delay:1.3s}.ha6{animation-delay:1.6s}
+@keyframes hfu{from{opacity:0;transform:translateY(26px)}to{opacity:1;transform:translateY(0)}}
+
+/* SECTION BASE */
+.sec{padding:clamp(50px,9vw,100px) clamp(16px,5vw,40px);max-width:780px;margin:0 auto;position:relative;z-index:2}
+.slabel{font-family:'Cinzel Decorative',serif;font-size:clamp(.58rem,1.7vw,.74rem);letter-spacing:.45em;text-transform:uppercase;color:var(--ps);text-align:center;margin-bottom:8px}
+.stitle{font-family:'Great Vibes',cursive;font-size:clamp(2.6rem,7.5vw,4.2rem);color:var(--dp);text-align:center;line-height:1.1;margin-bottom:4px}
+.gdiv{display:flex;align-items:center;gap:12px;max-width:280px;margin:14px auto 28px}
+.gdiv span{flex:1;height:1px;background:linear-gradient(90deg,transparent,var(--gold),transparent)}
+.gdiv i{width:5px;height:5px;border-radius:50%;background:var(--gold)}
+
+/* COUPLE */
+.cbg{background:linear-gradient(175deg,var(--cream) 0%,#ede5ff 50%,var(--cream) 100%)}
+.ccard{background:#fff;border:1px solid var(--gl);border-radius:3px;padding:clamp(24px,6vw,50px);box-shadow:0 8px 48px rgba(74,29,150,.09);text-align:center;position:relative}
+.ccard::before,.ccard::after{content:'';position:absolute;width:48px;height:48px;border-color:var(--gold);border-style:solid;opacity:.45}
+.ccard::before{top:10px;left:10px;border-width:2px 0 0 2px}
+.ccard::after{bottom:10px;right:10px;border-width:0 2px 2px 0}
+.pline{font-size:clamp(.88rem,2.5vw,1.08rem);color:var(--dp);font-weight:600;letter-spacing:.04em}
+.iline{font-style:italic;color:#666;font-size:clamp(.82rem,2.2vw,1rem);line-height:1.75;margin:10px 0 20px}
+.pb{margin:16px 0}
+.pn{font-family:'Great Vibes',cursive;font-size:clamp(2.8rem,8vw,4.2rem);color:var(--pm);line-height:1}
+.pr{font-size:clamp(.7rem,2vw,.85rem);letter-spacing:.28em;text-transform:uppercase;color:var(--gold);margin-top:4px}
+.pp{font-size:clamp(.78rem,2vw,.9rem);color:#777;margin-top:5px;font-style:italic}
+.wh{font-size:1.5rem;color:var(--gold);margin:8px 0}
+
+/* EVENTS */
+.ebg{background:linear-gradient(155deg,#0d0220 0%,#1e0845 50%,#0d0220 100%);padding:clamp(50px,9vw,100px) clamp(16px,5vw,40px);position:relative;overflow:hidden}
+.ebg .slabel{color:var(--gl)}
+.ebg .stitle{color:#fff}
+.egrid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;max-width:780px;margin:0 auto}
+.ec{background:rgba(255,255,255,.055);border:1px solid rgba(201,168,76,.28);border-radius:3px;padding:26px 20px;text-align:center;backdrop-filter:blur(6px);transition:transform .4s,background .4s}
+.ec:hover{transform:translateY(-7px);background:rgba(255,255,255,.1)}
+.eicon{font-size:2rem;margin-bottom:10px;display:block}
+.ename{font-family:'Cinzel Decorative',serif;color:var(--gold);font-size:clamp(.75rem,2.2vw,.95rem);letter-spacing:.12em;margin-bottom:8px}
+.edate{color:#fff;font-size:clamp(.9rem,2.5vw,1.05rem);font-weight:600;line-height:1.5}
+.etime{color:var(--gl);font-size:clamp(.78rem,2vw,.92rem);font-style:italic;margin-top:5px}
+.wbox{background:linear-gradient(135deg,rgba(201,168,76,.14),rgba(201,168,76,.04));border:2px solid var(--gold);border-radius:3px;padding:30px 22px;text-align:center;max-width:780px;margin:22px auto 0}
+.wbig{font-family:'Cinzel Decorative',serif;color:#fff;font-size:clamp(1.25rem,4vw,1.9rem);margin:8px 0}
+.rdetail{color:rgba(255,255,255,.68);font-style:italic;font-size:clamp(.78rem,2vw,.9rem);line-height:1.75;margin-top:8px}
+.lsep{margin-top:18px;padding-top:18px;border-top:1px solid rgba(201,168,76,.22)}
+
+/* VENUE */
+.vbg{background:var(--cream)}
+.vbox{background:#fff;border:1px solid var(--gl);border-radius:3px;padding:clamp(28px,6vw,52px);text-align:center;box-shadow:0 8px 40px rgba(74,29,150,.07);position:relative}
+.vbox::before,.vbox::after{content:'';position:absolute;width:48px;height:48px;border-color:var(--gold);border-style:solid;opacity:.45}
+.vbox::before{top:10px;left:10px;border-width:2px 0 0 2px}
+.vbox::after{bottom:10px;right:10px;border-width:0 2px 2px 0}
+.vname{font-family:'Cinzel Decorative',serif;font-size:clamp(.82rem,2.3vw,1.05rem);color:var(--pm);letter-spacing:.1em;margin-bottom:8px}
+.vadd{font-size:clamp(.92rem,2.5vw,1.12rem);color:var(--td);font-weight:600;line-height:1.65;margin-bottom:5px}
+.vsub{font-style:italic;color:#888;font-size:clamp(.8rem,2vw,.92rem)}
+.mbtn{display:inline-flex;align-items:center;gap:8px;margin-top:20px;background:linear-gradient(135deg,var(--pm),var(--dp));color:#fff;padding:11px 28px;border-radius:50px;text-decoration:none;font-family:'Cinzel Decorative',serif;font-size:.68rem;letter-spacing:.14em;transition:transform .3s,box-shadow .3s;box-shadow:0 4px 18px rgba(74,29,150,.3)}
+.mbtn:hover{transform:translateY(-3px);box-shadow:0 8px 26px rgba(74,29,150,.4)}
+.mbtn svg{width:15px;fill:#fff}
+
+/* FOOTER */
+.ftbg{background:linear-gradient(155deg,#0d0220,#1e0845);padding:clamp(44px,8vw,80px) clamp(16px,5vw,40px);text-align:center}
+.fttitle{font-family:'Great Vibes',cursive;font-size:clamp(2.4rem,7vw,4rem);color:#fff;margin-bottom:5px}
+.ftfrom{color:var(--gl);font-size:clamp(.72rem,2vw,.85rem);letter-spacing:.35em;text-transform:uppercase;margin-bottom:18px}
+.ftname{font-family:'Cinzel Decorative',serif;color:var(--gold);font-size:clamp(.88rem,2.5vw,1.1rem);letter-spacing:.08em;margin-bottom:7px}
+.ftinfo{color:rgba(255,255,255,.72);font-size:clamp(.82rem,2.2vw,.95rem);line-height:1.85;font-style:italic}
+.ftinfo a{color:var(--gl);text-decoration:none}
+.ftinfo a:hover{text-decoration:underline}
+.ftnote{margin-top:30px;color:rgba(255,255,255,.35);font-size:.68rem;letter-spacing:.22em}
+
+/* REVEAL */
+.rv{opacity:0;transform:translateY(38px);transition:opacity .8s ease,transform .8s ease}
+.rv.vis{opacity:1;transform:translateY(0)}
+.rd1{transition-delay:.1s}.rd2{transition-delay:.2s}.rd3{transition-delay:.3s}.rd4{transition-delay:.4s}
+
+/* TEMPLE MOTIF */
+.tmotif{text-align:center;color:var(--gold);font-size:1.6rem;letter-spacing:.35em;margin:10px 0;opacity:.65}
+
+@media(max-width:480px){.egrid{grid-template-columns:1fr 1fr}}
+@media(max-width:340px){.egrid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+
+<div class="pc" id="petals"></div>
+
+<!-- ══ HERO ══ -->
+<section class="hero">
+<div class="hero-bg-glow"></div>
+
+<!-- Temple arch SVG -->
+<svg class="t-arch" viewBox="0 0 700 350" xmlns="http://www.w3.org/2000/svg">
+  <!-- Outer arch -->
+  <path d="M60,350 L60,175 Q60,30 350,30 Q640,30 640,175 L640,350" fill="none" stroke="#c9a84c" stroke-width="3.5"/>
+  <!-- Inner arch -->
+  <path d="M105,350 L105,188 Q105,75 350,75 Q595,75 595,188 L595,350" fill="none" stroke="#c9a84c" stroke-width="1.5" stroke-dasharray="7,5"/>
+  <!-- Cross beams -->
+  <line x1="60" y1="180" x2="105" y2="180" stroke="#c9a84c" stroke-width="2"/>
+  <line x1="595" y1="180" x2="640" y2="180" stroke="#c9a84c" stroke-width="2"/>
+  <!-- Pillar rings left -->
+  <rect x="53" y="220" width="14" height="9" rx="3" fill="none" stroke="#c9a84c" stroke-width="1.3"/>
+  <rect x="53" y="265" width="14" height="9" rx="3" fill="none" stroke="#c9a84c" stroke-width="1.3"/>
+  <rect x="53" y="310" width="14" height="9" rx="3" fill="none" stroke="#c9a84c" stroke-width="1.3"/>
+  <!-- Pillar rings right -->
+  <rect x="633" y="220" width="14" height="9" rx="3" fill="none" stroke="#c9a84c" stroke-width="1.3"/>
+  <rect x="633" y="265" width="14" height="9" rx="3" fill="none" stroke="#c9a84c" stroke-width="1.3"/>
+  <rect x="633" y="310" width="14" height="9" rx="3" fill="none" stroke="#c9a84c" stroke-width="1.3"/>
+  <!-- Kalash (pot) at top -->
+  <ellipse cx="350" cy="32" rx="34" ry="14" fill="none" stroke="#c9a84c" stroke-width="2.2"/>
+  <path d="M322,32 Q350,8 378,32" fill="none" stroke="#c9a84c" stroke-width="2.2"/>
+  <line x1="350" y1="18" x2="350" y2="4" stroke="#c9a84c" stroke-width="1.8"/>
+  <circle cx="350" cy="2" r="5" fill="#c9a84c"/>
+  <!-- Lotus petals at base of kalash -->
+  <path d="M350,46 Q338,58 330,46 Q340,40 350,46Z" fill="none" stroke="#c9a84c" stroke-width="1.2"/>
+  <path d="M350,46 Q362,58 370,46 Q360,40 350,46Z" fill="none" stroke="#c9a84c" stroke-width="1.2"/>
+  <path d="M350,46 Q345,62 350,58 Q355,62 350,46Z" fill="none" stroke="#c9a84c" stroke-width="1"/>
+  <!-- Corner flourishes -->
+  <path d="M60,350 Q40,330 30,300" fill="none" stroke="#c9a84c" stroke-width="1.5" opacity=".6"/>
+  <path d="M640,350 Q660,330 670,300" fill="none" stroke="#c9a84c" stroke-width="1.5" opacity=".6"/>
+  <!-- Horizontal band top arch -->
+  <line x1="60" y1="145" x2="640" y2="145" stroke="#c9a84c" stroke-width="1" opacity=".3" stroke-dasharray="4,6"/>
+  <!-- Diamond accents on arch band -->
+  <polygon points="350,135 357,145 350,155 343,145" fill="none" stroke="#c9a84c" stroke-width="1.5"/>
+  <polygon points="200,130 205,140 200,150 195,140" fill="none" stroke="#c9a84c" stroke-width="1" opacity=".5"/>
+  <polygon points="500,130 505,140 500,150 495,140" fill="none" stroke="#c9a84c" stroke-width="1" opacity=".5"/>
+</svg>
+
+<div class="ha ha1">
+  <div class="gl-row"><span></span><i></i><i></i><i></i><span></span></div>
+</div>
+
+<p class="jai ha ha2">॥ Jai Jaganath ॥</p>
+
+<div class="ha ha2">
+  <p class="hfam">Santro's</p>
+  <p class="hsub">Wedding Invitation</p>
+</div>
+
+<p class="hinvite ha ha3">
+  Mr. Chinnababu Santro &amp; Mrs. Usharani Santro<br>
+  solicit your gracious presence on the auspicious occasion<br>of the wedding of their only daughter
+</p>
+
+<div class="ha ha4">
+  <div class="bname">Deepthi</div>
+  <span class="amp">&amp;</span>
+  <div class="gname">Neelamadhab</div>
+</div>
+
+<div class="ha ha5">
+  <div class="gdiv" style="margin:18px auto 0"><span></span><i></i><i></i><i></i><span></span></div>
+</div>
+
+<div class="dpill ha ha6">Friday, 10th April 2026 &nbsp;·&nbsp; Bhamini, Parvathipuram</div>
+
+<div class="scroll-h">
+  <span>Scroll</span>
+  <svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
+</div>
+</section>
+
+<!-- ══ COUPLE ══ -->
+<div class="cbg">
+<section class="sec">
+  <p class="slabel rv">The Couple</p>
+  <h2 class="stitle rv rd1">With Great Joy</h2>
+  <div class="gdiv rv rd2"><span></span><i></i><i></i><i></i><span></span></div>
+
+  <div class="ccard rv rd2">
+    <p class="pline">Mr. Chinnababu Santro &amp; Mrs. Usharani Santro</p>
+    <p class="iline">We solicit your gracious presence with family and friends<br>on the auspicious occasion of the wedding of our only daughter</p>
+
+    <div class="pb">
+      <div class="pn">Deepthi</div>
+      <p class="pr">Software Engineer</p>
+    </div>
+
+    <div class="wh">❦ &nbsp;with&nbsp; ❦</div>
+
+    <div class="pb">
+      <div class="pn">Neelamadhab</div>
+      <p class="pr">Software Engineer</p>
+      <p class="pp">Only son of Mr. Suryanarayan Panigrahi &amp; Mrs. Indira Rani Panigrahi</p>
+    </div>
+
+    <div class="gdiv" style="margin-top:20px"><span></span><i></i><i></i><i></i><span></span></div>
+    <p style="font-style:italic;color:#999;font-size:.86rem;margin-top:10px">Santro Brothers &amp; Family</p>
+  </div>
+</section>
+</div>
+
+<!-- ══ EVENTS ══ -->
+<section class="ebg">
+  <p class="slabel rv">Celebrations</p>
+  <h2 class="stitle rv rd1">Pre-Wedding &amp; Wedding</h2>
+  <div class="gdiv rv rd2" style="margin-bottom:34px">
+    <span style="background:linear-gradient(90deg,transparent,rgba(201,168,76,.45),transparent)"></span>
+    <i></i><i></i><i></i>
+    <span style="background:linear-gradient(90deg,transparent,rgba(201,168,76,.45),transparent)"></span>
+  </div>
+
+  <div class="egrid">
+    <div class="ec rv rd1">
+      <span class="eicon">🌿</span>
+      <div class="ename">Mehendi</div>
+      <div class="edate">Thursday<br>09th April 2026</div>
+      <div class="etime">from 10:00 AM</div>
+    </div>
+    <div class="ec rv rd2">
+      <span class="eicon">🌸</span>
+      <div class="ename">Haldi</div>
+      <div class="edate">Thursday<br>09th April 2026</div>
+      <div class="etime">from 06:00 PM</div>
+    </div>
+  </div>
+
+  <div class="wbox rv rd3">
+    <div class="ename" style="font-size:clamp(.88rem,2.4vw,1.08rem)">💍 &nbsp;Wedding Ceremony</div>
+    <div class="wbig">Friday, 10th April 2026</div>
+    <div class="etime" style="font-size:clamp(.86rem,2.2vw,.98rem);margin-top:2px">Hastaganthi Ritual: 11:10 PM – 11:40 PM</div>
+    <div class="rdetail">Baishakh Month &nbsp;·&nbsp; Krishna Paksha Astami Tithi<br>under Uttara Phalguni Nakshatra</div>
+
+    <div class="lsep">
+      <div class="ename" style="font-size:clamp(.8rem,2vw,.92rem)">🍽️ &nbsp;Lunch</div>
+      <div class="edate" style="font-size:clamp(.9rem,2.5vw,1.02rem)">Friday, 10th April 2026</div>
+      <div class="etime">from 12:00 PM onwards</div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ VENUE ══ -->
+<div class="vbg">
+<section class="sec">
+  <p class="slabel rv">Location</p>
+  <h2 class="stitle rv rd1">The Venue</h2>
+  <div class="gdiv rv rd2"><span></span><i></i><i></i><i></i><span></span></div>
+
+  <div class="vbox rv rd2">
+    <div style="font-size:2.4rem;margin-bottom:14px">🏛️</div>
+    <div class="vname">At Our Residency</div>
+    <div class="vadd">Bhamini (V &amp; M)<br>Parvathipuram District</div>
+    <div class="vsub">Andhra Pradesh, India</div>
+    <a class="mbtn" href="https://maps.google.com/?q=Bhamini,Parvathipuram,Andhra+Pradesh" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+      Get Directions
+    </a>
+  </div>
+</section>
+</div>
+
+<!-- ══ FOOTER ══ -->
+<section class="ftbg">
+  <div class="tmotif rv">☸ ✦ ☸</div>
+  <h2 class="fttitle rv rd1">Thank You</h2>
+  <p class="ftfrom rv rd1">for celebrating with us</p>
+
+  <div class="gdiv rv rd2" style="margin-bottom:22px">
+    <span style="background:linear-gradient(90deg,transparent,rgba(201,168,76,.4),transparent)"></span>
+    <i></i><i></i><i></i>
+    <span style="background:linear-gradient(90deg,transparent,rgba(201,168,76,.4),transparent)"></span>
+  </div>
+
+  <div class="rv rd2">
+    <p class="ftfrom" style="margin-bottom:5px">From</p>
+    <p class="ftname">Mr. Chinnababu Santro</p>
+    <div class="ftinfo">
+      Bhamini (V &amp; M), Parvatipuram Dist.<br>
+      <a href="tel:9491842262">Suman Santro: 94918 42262</a> &nbsp;|&nbsp; <a href="tel:8500101211">85001 01211</a>
+    </div>
+  </div>
+
+  <p class="ftnote rv rd3">॥ Jai Jaganath ॥ &nbsp;·&nbsp; With Best Regards &nbsp;·&nbsp; Santro Brothers &amp; Family</p>
+</section>
+
+<script>
+// Scroll reveal
+const rv=document.querySelectorAll('.rv');
+const io=new IntersectionObserver(e=>{e.forEach(x=>{if(x.isIntersecting){x.target.classList.add('vis');io.unobserve(x.target)}})},{threshold:.12});
+rv.forEach(el=>io.observe(el));
+
+// Floating petals
+const con=document.getElementById('petals');
+const cols=['#7b4fb5','#9b6ecc','#c9a84c','#e8d08a','#a855f7','#d4a0e0','#8b5cf6'];
+for(let i=0;i<20;i++){
+  const p=document.createElement('div');
+  p.className='pt';
+  const s=8+Math.random()*16;
+  const br=Math.random()>.5?'50% 0 50% 0':'0 50% 0 50%';
+  p.style.cssText=`left:${Math.random()*100}%;width:${s}px;height:${s*1.35}px;background:${cols[Math.floor(Math.random()*cols.length)]};animation-duration:${7+Math.random()*9}s;animation-delay:${Math.random()*10}s;border-radius:${br};opacity:${.15+Math.random()*.3}`;
+  con.appendChild(p);
+}
+</script>
+</body>
+</html>
